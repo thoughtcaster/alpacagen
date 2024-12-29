@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alpaca Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="layout-grid">
+            <h1 class="heading">ALPACA GENERATOR</h1>
+            <div id="left-pane">
+                <div id="alpaca">
+                    <img id="hair-img" src="alpaca_assets/hair/default.png">
+                    <img id="ears-img" src="alpaca_assets/ears/default.png">
+                    <img id="eyes-img" src="alpaca_assets/eyes/default.png">
+                    <img id="mouth-img" src="alpaca_assets/mouth/default.png">
+                    <img id="neck-img" src="alpaca_assets/neck/default.png">
+                    <img id="leg-img" src="alpaca_assets/leg/default.png">
+                    <img id="accessory-img" src="alpaca_assets/accessory/glasses.png">
+                    <img id="background-img" src="alpaca_assets/background/darkblue50.png">
+                    <img id="nose-img" src="alpaca_assets/nose.png">
+                </div>
+                <div id="misc-buttons">
+                    <button type="button" id="random-button" class="misc-button">
+                        <img src="icons/random-24.png">
+                        Random
+                    </button>
+                    <button type="button" id="download-button" class="misc-button">
+                        <img src="icons/download-24.png">
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div id="right-pane">
+                <h2 class="subheading">ACCESSORIZE THE ALPACA'S</h2>
+                <div id="alpaca-part-buttons">
+                    <button type="button" id="hair" class="radio-group-button selected">Hair</button>
+                    <button type="button" id="ears" class="radio-group-button">Ears</button>
+                    <button type="button" id="eyes" class="radio-group-button">Eyes</button>
+                    <button type="button" id="mouth" class="radio-group-button">Mouth</button>
+                    <button type="button" id="neck" class="radio-group-button">Neck</button>
+                    <button type="button" id="leg" class="radio-group-button">Leg</button>
+                    <button type="button" id="accessory" class="radio-group-button">Accessory</button>
+                    <button type="button" id="background" class="radio-group-button">Background</button>
+                </div>
+                <h2 class="subheading">STYLE</h2>
+                <div id="alpaca-style-buttons">
+                    <button type="button" id="default" class="radio-group-button selected">Default</button>
+                    <button type="button" id="bang" class="radio-group-button">Bang</button>
+                    <button type="button" id="curls" class="radio-group-button">Curls</button>
+                    <button type="button" id="elegant" class="radio-group-button">Elegant</button>
+                    <button type="button" id="short" class="radio-group-button">Short</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="script.js"></script>
+    </body>
+</html>

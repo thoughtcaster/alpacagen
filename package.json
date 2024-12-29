@@ -1,0 +1,15 @@
+{
+  "name": "alpacagen",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "An alpaca avatar generator.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Puleo",
+  "license": "ISC",
+  "dependencies": {
+    "html2canvas": "^1.4.1"
+  }
+}

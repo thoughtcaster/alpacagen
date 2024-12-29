@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececec;
+}
+
+#alpaca {
+    height: 450px;
+    width: 450px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#background-img, #ears-img, #neck-img, #nose-img, #mouth-img, #eyes-img, #accessory-img, #hair-img, #leg-img {
+    width: 450px;
+    height: 450px;
+    object-fit: scale-down;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+#background-img {
+    z-index: 0;
+}
+
+#ears-img {
+    z-index: 1;
+}
+
+#neck-img {
+    z-index: 2;
+}
+
+#nose-img {
+    z-index: 3;
+}
+
+#mouth-img {
+    z-index: 4;
+}
+
+#hair-img {
+    z-index: 5;
+}
+
+#eyes-img {
+    z-index: 6;
+}
+
+#accessory-img {
+    z-index: 7;
+}
+
+#leg-img {
+    z-index: 8;
+}
+
+#layout-grid {
+    display: grid;
+    padding: 20px 80px;
+    row-gap: 20px;
+    column-gap: 80px;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-template-columns: 450px 450px;
+    grid-template-areas:
+        'heading heading'
+        'left-pane right-pane';
+    justify-content: center;
+}
+
+.heading, .subheading {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    color: #011736;
+}
+
+.heading {
+    grid-area: heading;
+    font-size: 32pt;
+}
+
+.subheading {
+    font-size: 12pt;
+}
+
+.subheading:not(:first-child) {
+    margin-top: 20px;
+}
+
+#left_pane {
+    grid-area: left-pane;
+    display: flex;
+    flex-direction: column
+}
+
+#right_pane {
+    grid-area: right-pane;
+    display: flex;
+    flex-direction: column;
+}
+
+#misc-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.misc-button {
+    background-color: #fefefe;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.misc-button img {
+    margin-right: 8px;
+}
+
+.radio-group-button {
+    padding: 15px 35px;
+    margin: 5px 3px;
+    border-radius: 25px;
+    border: solid #b7cdf2;
+    color: #b7cdf2;
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.selected {
+    background-color: #23509c;
+    border: solid #23509c;
+    color: #ececec;
+}
